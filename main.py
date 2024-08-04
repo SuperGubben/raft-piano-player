@@ -1,5 +1,6 @@
 import play_song
-    
+import time as t
+
 
 def main():
     songs = []
@@ -19,7 +20,8 @@ def main():
     
     if songToPlayNumber in range(0, len(songs)+1):
         songToPlay = play_song.songs[songs[songToPlayNumber]]
-        songToPlay()
+        t.sleep(3)
+        songToPlay() # play the song
         main()
     else:
         print("invalid input")
