@@ -3,7 +3,7 @@ import time as t
 
 kb = Controller()
 
-def hold_note(key: str, length: int = 600, tone: int = 0):
+def long_note(key: str, length: int = 600, tone: int = 0):
     print(f"pressing {key} for {length}ms with tone {tone}")
 
     if tone == -1:
