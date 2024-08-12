@@ -19,8 +19,8 @@ def main():
         main()
     
     if songToPlayNumber in range(0, len(songs)+1):
+        t.sleep(2)
         songToPlay = play_song.songs[songs[songToPlayNumber]]
-        t.sleep(3)
         songToPlay() # play the song
         main()
     else:
